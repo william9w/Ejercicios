@@ -1,0 +1,29 @@
+/*
+
+*/
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+int main(int arc, char * argv[]){
+ float calificaciones[20], suma=0,aprobados, reprobados,rep=0;
+ 
+ cout<<"Introducir las calificaciones de cada alumno"<<endl;
+ for (int i=0; i<20; i++)
+{
+    cin>>calificaciones[i]; 
+    if (calificaciones[i]>=65){
+
+      aprobados=1;
+      suma+=aprobados;
+    }       
+    else{
+      reprobados = 1;
+      rep+=reprobados;
+    }
+
+ }
+ cout<<"Numero de calificaciones por debajo de 65 es igual:"<<endl;
+ 
+ cout<<rep<<endl;
+ return 0;
+} 

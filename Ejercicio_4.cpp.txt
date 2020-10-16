@@ -1,0 +1,12 @@
+#include <cmath> // Libreria para calcular el valor absoluto de un numero
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  float valor;
+  cout << "Ingrese un numero: ";
+  cin >> valor;
+  float valorAb = abs(valor);
+  cout << "El valor absoluto es " << valorAb;
+}
